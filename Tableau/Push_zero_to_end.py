@@ -24,3 +24,18 @@ test = [1, 0 , 0, 5, 6, 0, 11, 90, 0, 41, 0, 19 ]
 print("Les zeros du tableau déplacés vers la fin du tableau:", move_zero(test))
 
 
+#methode 2: Deux traversées (Complexité temporelle : O(n),Espace auxiliaire : O(1))
+def method_2(tab):
+    count = 0
+    taille = len (tab)
+    for x in range(taille):
+        if tab[x] != 0
+        tab[x] , tab[count] = tab [count] , tab [x]
+        #On incremente pour aller sur la position suivante
+        count =+1
+    return tab
+#Test
+tableau = [ 0, 5, 6, 0, 11,13,0,10,23,0,28,0,15,0,10]
+print("Les zeros du tableau déplacés vers la fin du tableau:",method_2(tableau))
+
+
